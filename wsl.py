@@ -28,10 +28,10 @@ secrets_json = f'C:\\Users\\{USER}\\WATTSIGHT\\JSON\\SECRETS.json'
 with open(secrets_json, 'r', encoding='UTF-8') as fin:
     ws_secrets = json.load(fin)
 
-USERNAME = ws_secrets['Alpiq']['USERNAME']
-PASSWORD = ws_secrets['Alpiq']['PASSWORD']
-URL = ws_secrets['Alpiq']['PROXY_URL']
-PORT = ws_secrets['Alpiq']['PROXY_PORT']
+USERNAME = ws_secrets['USERNAME']
+PASSWORD = ws_secrets['PASSWORD']
+URL = ws_secrets['PROXY_URL']
+PORT = ws_secrets['PROXY_PORT']
 
 WS_CLIENT_ID = ws_secrets['Wattsight']['CLIENT_ID']
 WS_CLIENT_SECRET = ws_secrets['Wattsight']['CLIENT_SECRET']
